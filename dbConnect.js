@@ -6,7 +6,7 @@ const dbConnect = () => {
 
 	// Connect to your MongoDB database
     const connectionParams = { useNewUrlParser: true };
-    mongoose.connect("mongodb+srv://admin:axusDfXXWOAg7wW4@cluster0.jvixxfw.mongodb.net/MarketCar", connectionParams);
+    mongoose.connect("mongodb+srv://admin:axusDfXXWOAg7wW4@cluster0.jvixxfw.mongodb.net/MarketCar");
 	mongoose.set("strictQuery",false);
 	// mongoose.connect("mongodb+srv://admin:axusDfXXWOAg7wW4@cluster0.jvixxfw.mongodb.net/MarketCar", connectionParams);
 	// mongoose.set("strictQuery",false);
