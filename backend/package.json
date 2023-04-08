@@ -1,9 +1,9 @@
 {  "name": "server",
 "version": "1.0.0",
 "description": "pagination, filter and sorting",
-"main": "server.js",
+"main": "index.js",
 "scripts": {
-  "start": "nodemon server.js"
+  "start": "nodemon index.js"
 },
 "author": "ThuanLeVan",
 "license": "ISC",
