@@ -1,11 +1,10 @@
-
-const base_url = process.env.DB;
 const mongoose = require("mongoose");
 
 const dbConnect = () => {
 
 	// Connect to your MongoDB database
-    mongoose.connect("mongodb+srv://admin:axusDfXXWOAg7wW4@cluster0.jvixxfw.mongodb.net/MarketCar");
+    const dbURI = 'mongodb+srv://admin:axusDfXXWOAg7wW4@cluster0.jvixxfw.mongodb.net/MarketCar';
+    mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 	mongoose.set("strictQuery",false);
 
     mongoose.connection.on("connected", () => {
